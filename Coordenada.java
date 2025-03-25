@@ -25,13 +25,15 @@ public class Coordenada {
     public void setY(int y) {
         this.y = y;
     }
-    // public int distancia(Coordenada c) {
+    public double distancia(Coordenada c) {
+        return Math.sqrt(Math.pow(this.getX() - c.getX(), 2) + Math.pow(this.getY() - c.getY(), 2));
 
-    // }
-    // public static int distancia(Coordenada c1, Coordenada c2) {
+    }
+    public static double distancia(Coordenada c1, Coordenada c2) {
+        return c1.distancia(c2);
+    }
+    public String toString() {
+        return "(" + this.getX() + ", " + this.getY() + ")";
         
-    // }
-    // String toString() {
-        
-    // }
+    }
 }
