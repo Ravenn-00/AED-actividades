@@ -9,6 +9,8 @@ public class Coordenada {
         this.y = y;
     }
     public Coordenada(Coordenada c) {
+        this.x = c.getX;
+        this.y = c.gety;
 
     }
     public int getX() {
