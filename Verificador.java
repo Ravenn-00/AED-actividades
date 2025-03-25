@@ -13,7 +13,7 @@ public class Verificador {
         if(R1MinX < R2MaxX && R1MaxX > R2MinX && R1MinY < R2MaxY && R1MaxY > R2MinY) {
             System.out.print("se sobreponen");
         }
-        if(R1MinX == R2MinX && R1MaxX == R2MaxX || R2MinX == R1MaxX || R1MinY ==  R2MaxY || R2MinY == R1MaxY) {
+        if(R1MinX == R2MinX || R1MaxX == R2MaxX || R1MinY ==  R2MinY || R1MaxY == R2MaxY) {
             System.out.print("estan juntos");
         }
         else {
